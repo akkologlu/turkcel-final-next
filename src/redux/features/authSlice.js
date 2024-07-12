@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const getUserFromLocalStorage = () => {
   if (typeof window !== "undefined") {
-    const user = window.localStorage.getItem("user");
+    const user = window.localStorage.getItem("shopcommerce_user");
     return user ? JSON.parse(user) : false;
   }
   return false;
@@ -19,13 +19,16 @@ const authSlice = createSlice({
   reducers: {
     loginRedux: (state, action) => {
       if (typeof window !== "undefined") {
-        window.localStorage.setItem("user", JSON.stringify(action.payload));
+        window.localStorage.setItem(
+          "shopcommerce_user",
+          JSON.stringify(action.payload)
+        );
       }
       state.user = action.payload;
     },
     logoutRedux: (state) => {
       if (typeof window !== "undefined") {
-        window.localStorage.removeItem("user");
+        window.localStorage.removeItem("shopcommerce_user");
       }
       state.user = false;
     },
@@ -61,7 +64,10 @@ const authSlice = createSlice({
           basket: newBasket,
         };
         if (typeof window !== "undefined") {
-          window.localStorage.setItem("user", JSON.stringify(state.user));
+          window.localStorage.setItem(
+            "shopcommerce_user",
+            JSON.stringify(state.user)
+          );
         }
         updateUserDB(state.user.id, state.user);
       }
@@ -76,7 +82,10 @@ const authSlice = createSlice({
           basket: newBasket,
         };
         if (typeof window !== "undefined") {
-          window.localStorage.setItem("user", JSON.stringify(state.user));
+          window.localStorage.setItem(
+            "shopcommerce_user",
+            JSON.stringify(state.user)
+          );
         }
         updateUserDB(state.user.id, state.user);
       }
@@ -92,7 +101,10 @@ const authSlice = createSlice({
           basket: newBasket,
         };
         if (typeof window !== "undefined") {
-          window.localStorage.setItem("user", JSON.stringify(state.user));
+          window.localStorage.setItem(
+            "shopcommerce_user",
+            JSON.stringify(state.user)
+          );
         }
       }
       updateUserDB(state.user.id, state.user);

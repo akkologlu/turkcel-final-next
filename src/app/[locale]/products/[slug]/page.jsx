@@ -114,7 +114,7 @@ const ProductDetail = async ({ params, searchParams }) => {
                 {t("allReviews")}{" "}
                 <span className="fs-6  opacity-75">({comments.length})</span>
               </h4>
-              <div className="col-lg-3 col-5 d-flex justify-content-between">
+              <div className="col-lg-3 col-5 d-flex flex-wrap gap-2 gap-lg-0 justify-content-between">
                 <CommentOrder sortKey={sortKey} sortOrder={sortOrder} />
                 <CommentModal product={product} />
               </div>
