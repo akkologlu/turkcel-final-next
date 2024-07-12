@@ -14,16 +14,16 @@ const BrowseByDressStyle = () => {
           col={4}
           link={"Casual"}
           title={t("casual")}
-          image={"casual"}
+          image={"Casual"}
         />
         <DressCard
           col={8}
           link={"Formal"}
           title={t("formal")}
-          image={"formal"}
+          image={"Formal"}
         />
-        <DressCard col={8} link={"Party"} title={t("party")} image={"party"} />
-        <DressCard col={4} link={"Gym"} title={t("gym")} image={"gym"} />
+        <DressCard col={8} link={"Party"} title={t("party")} image={"Party"} />
+        <DressCard col={4} link={"Gym"} title={t("gym")} image={"Gym"} />
       </div>
     </StyledBrowseByDressStyle>
   );
