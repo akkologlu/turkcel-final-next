@@ -1,0 +1,41 @@
+$info: #f0f0f0;
+$light: #00000099;
+$secondary: #00000066;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+);
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+$input-btn-focus-color: none;
+$input-btn-focus-box-shadow: none;
+
+$accordion-bg: black;
+$accordion-color: white;
+$accordion-button-bg: black;
+$accordion-button-color: white;
+$accordion-icon-color: white;
+$accordion-button-active-color: black;
+
+$input-border-color: $light;

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Light.otf") format("opentype");
+  font-weight: light;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url("/fonts/Fontspring-DEMO-integralcf-bold.otf") format("opentype");
+}
+.landingPage {
+  background-image: url("../public/images/landing.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 103px 0;
+  background-color: #f2f0f1;
+  @media screen and (max-width: 768px) {
+    background-image: none;
+    padding: 0;
+  }
+}
+.integralFont {
+  font-family: "Integral CF", sans-serif;
+}
+body {
+  font-family: "Satoshi", sans-serif;
+}
+.cursor {
+  cursor: pointer;
+}
