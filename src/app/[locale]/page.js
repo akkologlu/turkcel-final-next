@@ -6,7 +6,6 @@ import Showcase from "./_components/Showcase";
 import { getProducts } from "./_lib/actions";
 import { getTranslations } from "next-intl/server";
 
-export const revalidate = 0;
 export default async function Home() {
   const products = await getProducts();
   const t = await getTranslations("lang");

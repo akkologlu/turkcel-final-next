@@ -11,7 +11,6 @@ import ProductDetailTab from "../../_components/ProductDetailTab";
 import Faqs from "../../_components/Faqs";
 import CommentOrder from "../../_components/comments/CommentOrder";
 
-export const revalidate = 0;
 const ProductDetail = async ({ params, searchParams }) => {
   const t = await getTranslations("lang");
   const product = await getProduct(params.slug);

@@ -2,9 +2,7 @@
 import { revalidatePath } from "next/cache";
 const baseUrl = process.env.NEXT_PUBLIC_DB_URL;
 export const getProducts = async (query) => {
-  const res = await fetch(`${baseUrl}/products?${query}`, {
-    cache: "no-store",
-  });
+  const res = await fetch(`${baseUrl}/products?${query}`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
